@@ -1,0 +1,25 @@
+# Example Terraform variables file
+# Copy this file to terraform.tfvars and customize the values
+
+# REQUIRED: Your Azure subscription ID
+subscription_id = "00000000-0000-0000-0000-000000000000"
+
+# OPTIONAL: Azure region (default: eastus2)
+location = "eastus2"
+
+# OPTIONAL: Environment name (dev, staging, prod)
+environment_name = "dev"
+
+# OPTIONAL: Project name for resource naming
+project_name = "n8n-ai"
+
+# OPTIONAL: Enable telemetry (default: false)
+enable_telemetry = false
+
+# OPTIONAL: Custom tags for resources
+tags = {
+  Environment = "development"
+  Project     = "n8n-ai-platform"
+  Owner       = "your-team-name"
+  CostCenter  = "engineering"
+}
